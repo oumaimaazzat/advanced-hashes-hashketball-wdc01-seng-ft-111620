@@ -180,7 +180,7 @@ end
 def player_stats(name)
   game_hash.each do |team_info, team|
     team[:players].each do |stats, value|
-      puts stats 
+      puts player[:player_name] 
     end 
   end 
 end
