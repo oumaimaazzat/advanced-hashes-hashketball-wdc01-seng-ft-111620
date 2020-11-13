@@ -178,15 +178,13 @@ def player_numbers(input)
 end
 
 def player_stats(name)
-  p = game_hash[:home][:players].each do |player|
-    player[:player_name] == name 
-    return game_hash[:home][:players][]
-  end 
-  if p 
-    
-  else 
+  game_hash.each do |team_info, team|
+    team[:players].each do |stats, value|
+      puts stats 
+    end 
   end 
 end
+  
 
 def big_shoe_rebounds
   big_shoe = 0
